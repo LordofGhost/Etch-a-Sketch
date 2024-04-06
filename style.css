@@ -1,5 +1,15 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
 #container {
     display: flex;
+    flex-direction: column;
 }
 
 .row {
@@ -8,5 +18,8 @@
 }
 
 .square {
-    background-color: black;
+    border: 1px solid black;
+    justify-content: space-evenly;
+    width: 5px;
+    height: 5px;
 }
