@@ -1,13 +1,12 @@
 const debugMode = true;
 const container = document.getElementById('container');
-const inputWidth = document.getElementById('width');
-const inputHeight = document.getElementById('height');
+const size = document.getElementById('size');
 const submitSize = document.getElementById('submitSize');
 
 submitSize.addEventListener('click', () => {
-    let rows = inputWidth.value;
-    let columns = inputWidth.value;
-    if (rows > 0 && rows <= 100 && columns > 0 && columns <= 100) init(rows, columns); else prompt("max 100x100");
+    let rows = size.value;
+    let columns = size.value;
+    if (rows > 0 && rows <= 100 && columns > 0 && columns <= 100) init(rows, columns); else if (debugMode) console.error("Max size 100");
 });
 
 function init (rows, columns) {  // creates the canvas
