@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
@@ -11,14 +14,22 @@
     <div>
         <div id="container"></div>
         <div class="selector-container">
-            <input id="size" type="number" min="1" max="100" value="16">
-            <button id="submitSize">Select Size</button>
-            <div class="color" style="background-color: black;"></div>
-            <div class="color" style="background-color: red;"></div>
-            <div class="color" style="background-color: green;"></div>
-            <div class="color" style="background-color: blue;"></div>
-            <div class="color" style="background-color: white;"></div>
-            <button class="color">random</button>
+            <div class="size-container">
+                <input id="size" type="number" min="1" max="100" value="16">
+                <button id="submitSize">Select Size</button>
+            </div>
+            <div class="color-container">
+                <div class="color" style="background-color: black"></div>
+                <div class="color" style="background-color: #f44336"></div>
+                <div class="color" style="background-color: #9c27b0"></div>
+                <div class="color" style="background-color: #3f51b5"></div>
+                <div class="color" style="background-color: #03a9f4"></div>
+                <div class="color" style="background-color: #009688"></div>
+                <div class="color" style="background-color: #8bc34a"></div>
+                <div class="color" style="background-color: #ffeb3b"></div>
+                <div class="color" style="background-color: #ff9800"></div>
+                <div class="color" style="background-color: white"></div>
+            </div>
         </div>
     </div>
     
